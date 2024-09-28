@@ -14,9 +14,10 @@ body {
 
 /* Header */
 header {
-    background-color: #333; /* Dark gray background */
-    color: #FAF3E0;  /* Light text on the header */
+    background-color: #FAF3E0; /* Warm cream background */
+    color: #333;  /* Dark text on the header */
     padding: 2rem 0;
+    border-bottom: 2px solid #FFB74D; /* Bottom border in warm apricot */
 }
 
 header h1 {
@@ -31,7 +32,7 @@ header p {
 }
 
 header a {
-    color: #FAF3E0; /* Link color in header */
+    color: #FFB74D; /* Warm apricot for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,6 +44,9 @@ header a:hover {
 /* Projects Section */
 #projects {
     padding: 2rem;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 #projects h2 {
@@ -57,9 +61,9 @@ header a:hover {
     border-radius: 10px;
     background-color: #FFF8E1;  /* Slightly lighter background for project cards */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Center the project cards */
     width: 80%; /* Make project cards responsive */
     max-width: 600px; /* Limit max width for better alignment */
+    text-align: left; /* Left-align text within project cards */
 }
 
 .project h3 a {
@@ -70,7 +74,7 @@ header a:hover {
 }
 
 .project h3 a:hover {
-    color: #B04A00; /* Darker orange on hover */
+    color: #FFB74D; /* Warm apricot on hover */
     text-decoration: underline;
 }
 
@@ -89,11 +93,12 @@ header a:hover {
 
 /* Footer */
 footer {
-    background-color: #333; /* Dark gray for footer */
-    color: #FAF3E0; /* Light text in footer */
+    background-color: #FAF3E0; /* Warm cream for footer */
+    color: #333; /* Dark text in footer */
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;
+    border-top: 2px solid #FFB74D; /* Top border in warm apricot */
 }
 
 footer p {
