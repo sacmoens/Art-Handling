@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color: #FAF3E0; /* Warm cream background */
+    background-color: #FFB74D; /* Warm apricot background for header */
     color: #333;  /* Dark text on the header */
     padding: 2rem 0;
     border-bottom: 2px solid #FFB74D; /* Bottom border in warm apricot */
@@ -32,7 +32,7 @@ header p {
 }
 
 header a {
-    color: #FFB74D; /* Warm apricot for links */
+    color: #333; /* Dark color for links in header */
     text-decoration: none;
     font-weight: bold;
 }
@@ -74,7 +74,7 @@ header a:hover {
 }
 
 .project h3 a:hover {
-    color: #FFB74D; /* Warm apricot on hover */
+    color: #B04A00; /* Darker orange on hover */
     text-decoration: underline;
 }
 
@@ -103,4 +103,31 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Smaller font for mobile */
+    }
+
+    header p {
+        font-size: 1rem; /* Smaller font for mobile */
+    }
+
+    #projects h2 {
+        font-size: 2rem; /* Smaller section heading */
+    }
+
+    .project {
+        width: 90%; /* Wider project cards on mobile */
+    }
+
+    .project h3 a {
+        font-size: 1.5rem; /* Smaller project link */
+    }
+
+    .project p {
+        font-size: 1rem; /* Smaller description */
+    }
 }
